@@ -1,0 +1,627 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;700&family=Roboto:wght@900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Raleway&display=swap');
+
+@keyframes arrow {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 7px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: 'Fira Sans Condensed'; */
+}
+
+html{
+       
+    scroll-behavior: smooth;
+}
+
+header{
+    
+    position: fixed;
+    width: 100%;
+    height: 69px;
+    display: flex; 
+    justify-content: flex-end;
+}
+    
+
+
+.logo-name{
+    flex: 1;
+    display: flex;
+    padding: 19px;
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 19px;
+    flex-direction: row;
+    align-items: center;
+        
+}
+
+.nav {
+    padding: 19px;
+    color: #fff;
+    font-family: 'Dosis';
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    
+
+}
+.nav:hover{
+    background-color: #be3340;
+    transition: 0.5s;
+    
+}
+
+#home{
+    background-image: url('../images/joshua-aragon-BMnhuwFYr7w-unsplash.jpg');
+    display: flex;
+    min-height: 100vh;
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-size:cover;
+    background-position: center;
+    font-family: Raleway;
+    /* font-family: 'Montserrat', sans-serif;     */
+}
+.area-home{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+        
+}
+.photo-home{
+    background: url(../images/foto2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    
+    width: 220px;
+    height: 220px;
+    
+}
+/* .photo-home img{
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.6);
+    width: 200px;
+    height: 200px;
+    
+} */
+
+.container{
+    padding-top: 30px;
+    width: 600px;
+    
+}
+
+.container h1 {
+    
+    font-family: 'Raleway';
+    font-size: 70px;
+    /* padding: 0.5rem; */
+    /* font-weight:700; */
+    /* letter-spacing: 0.1rem; */
+    line-height: 70px;
+    text-align: center;
+    /* overflow: hidden; */
+    color: #fff;
+  }
+  .container h5 {
+    font-family: 'Raleway';
+    font-size: 15px;
+    line-height: 15px;
+    /* padding: 0.5rem; */
+    /* font-weight: bold; */
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+button{
+    font-family: 'Dosis';
+    letter-spacing: 2px;
+    font-size: 10px;
+    margin: 5px;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #fff;
+    font-weight: bold;
+    background-color: rgba(48, 56, 65, 0.8);
+    color: #fff;
+
+    
+}
+button:hover{
+    background-color: #f94856;
+}
+a{
+    color: inherit;
+}
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #ddcc32;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+.arrow-area {
+
+    width: 50px;
+    height: 50px;
+    padding-top: 100px;    
+    
+}
+.arrow-area img {
+    filter: invert();
+    width: 45px;
+    height: 30px;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#about{
+    
+    /* background: url('../images/andrew-neel-cckf4TsHAuw-unsplash.jpg' */
+    background-color: #000;
+    background-size: cover;
+    background-position: bottom;
+    min-height: 100vh;
+    display: flex; 
+    
+    /* justify-content:space-between; */
+    flex-direction:column;
+    /* font-family: 'Fira Sans Condensed', sans-serif; */
+
+}
+.area-about{
+    flex: 3;
+    /* background: #be3340; */
+    display: flex;
+}
+.citacao{
+    flex: 2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    /* letter-spacing: 0.1rem; */
+    text-align: left;
+    /* overflow: hidden; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.citacao span{
+    color: rgb(196, 52, 60);
+    letter-spacing: 4px;
+    line-height: 21px;
+    font-weight: 400;
+    
+}
+.area-photo--about{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.photo-about{
+    
+    /* margin-left: 80px; */
+    padding-bottom: 30px;
+    width: 250px;
+    height: 250px;    
+}
+.photo-about img{
+    border-radius: 50%;
+    border: 10px solid #e33c3a;
+    width: inherit;
+    height: inherit;
+    /* background-color: rgb(143, 15, 228); */
+        
+}
+.bio{
+    flex: 2;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    /* letter-spacing: 0.1rem; */
+    text-align: left;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bio-saudacao{
+    font-size: 3rem;
+    color: #f94856;
+}
+.bio-jobs{
+    color: #f94856;
+}
+
+
+#about h1{
+    font-size: 54px;
+    color: #fff;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+}
+#about h2{
+    font-size: 28px;
+    /* font-family: 'Montserrat', sans-serif; */
+    color: #f94856;
+    font-style: italic;
+    
+}
+.area-skills{
+    flex: 1;
+    /* background: #ddcc32; */
+    display: flex;
+    flex-direction: column;
+}
+.title-skills{
+    color: rgb(240, 240, 240);
+    font-size: 21px;
+    line-height: 21px;
+    font-family: 'Raleway';
+    text-align: center;
+    /* background: #ccc; */
+    
+}
+
+.area-skills-icones{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills{
+    width: 70px;
+    height: 70px;
+    
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    
+    border-radius: 50%;
+}
+.skills span{
+    
+    color: rgb(240, 240, 240);
+    font-size: 0.8rem;
+    
+}
+
+#projects{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    min-height: 100vh;
+    /* height: inherit; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_projects{
+    font-size: 39px;
+    color: rgb(240, 240, 240);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 80px;
+    border-bottom: solid rgb(240, 240, 240) 5px;
+}
+.list-projects{
+    width: inherit; /*vai pegar toda a tela*/
+    max-width: 1140px;
+        
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-projects--photo{
+    width: 280px;
+}
+.list-projects--photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.list-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+.list-projects--photoinfo{
+    position:absolute; /*Para info ficar encima da foto*/
+    background-color: rgba(0, 0, 0, 0.8); /*para ter um preto com 50% de opacity*/
+    width: inherit;
+    height: inherit;
+    display: none;    /*a infor vai ficar invisivel e só aparecer qdo passar o mouse*/
+    justify-content: center;
+    align-items: center;
+    color: rgb(240, 240, 240);
+    flex-direction: column;
+    /* font-family: 'Montserrat', sans-serif; */
+}
+.list-projects--photoinfo h5{
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.list-projects--photoinfo p{
+    text-align: center;
+}
+.list-projects--photoarea:hover .list-projects--photoinfo{ /*Ao passar o mouse muda as prop de photoinfo*/
+    display: flex;
+}
+
+.project1{
+    display: flex;
+    background-color: #be3340;
+    margin: 10px;
+    
+    width: 326px;
+    height: 250px;
+    
+}
+.project1 > a > img{
+    
+    width: 100%;
+    height: 100%;
+}
+footer{
+    min-height: 435px;
+    background-color: #303841 ;
+    height: 345px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer h1{
+    font-size: 56px;
+    font-weight: bold;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    margin-top: 30px;
+}
+footer h2{
+    font-size: 17px;
+    color: rgb(240, 240, 240);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-style: italic;
+    font-weight: 400;
+}
+section#footer{
+    
+    margin: 50px auto;
+    width: 1025px;
+    height: 150px;
+    
+}
+.rede{
+    display: flex;
+    
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+}
+.rede:hover {
+    cursor: pointer;
+    transform:translateY(+15px);/*subindo -20px da posição inicial*/
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+}
+.icone-skill{
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+       
+}
+
+.icone{
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    
+    filter: invert(1);
+    /* background-color: #f94856; */
+}
+
+
+.rodape{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+
+    
+}
+.thanks{
+    margin: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: rgb(240, 240, 240);
+    font-size: 18px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 300;
+   
+}
+#copy{
+   margin-right: 30px;
+}
+.bar{
+    border-bottom: solid 5px #f94856;
+    width: 100%;
+
+}
+
+/* media queries */
+
+@media (max-width: 730px) {
+    
+    .container p {
+        font-size: 2rem;
+     }
+    .title_projects {
+        font-size: 29px;
+             
+    }
+    
+}
+@media (max-width: 582px) {
+    footer{
+        height: 600px;
+    }
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 378px) {
+
+    #about img {
+        margin-top: 0px;
+        width: 246px;
+        height: 233px;
+    }
+    .container p {
+        font-size: 1rem;
+     }
+    .title_projects {
+        font-size: 15px;
+        margin-bottom: 22px;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right:9px;
+        
+    }    
+    footer{
+        height: 476px;
+    }
+    footer h1 {
+        font-size: 31px;
+    }
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thanks {
+        font-size: 16px;
+    }
+}
+a:link {
+   text-decoration:none;
+  }
+  a:visited {
+    /* color:#444444; */
+    text-decoration:none;
+  }
+  .scrollbutton{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #be3340;
+    
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    z-index: 999;
+    cursor: pointer;
+    
+  }
+  .scrollbutton img{
+      width: inherit;
+      height: inherit;
+  }
+
+
+/* 360 x 640 Moto G4
+
+.thanks {
+    font-size: 16px;
+}
+
+footer h1 {
+    font-size: 31px;
+}
+
+.title_projects {
+    font-size: 29px;
+    margin-bottom: 22px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right:9px;
+    border-bottom: solid rgb(240, 240, 240) 5px;
+}
+
+
+#about img {
+    margin-top: 0px;
+    width: 246px;
+    height: 233px;
+}
+
+
+
+.container p {
+    font-size: 1rem;
+ } */
